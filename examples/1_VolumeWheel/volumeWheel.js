@@ -268,8 +268,6 @@ function spawnProgram( cwd, program, args, callback, cancelOutput ) {
 
 function terminate() {
 
-	isAppEnding = true;
-
 	keyb.finishCustomMatrixMode( () => {
 
 		process.exit( 0 );

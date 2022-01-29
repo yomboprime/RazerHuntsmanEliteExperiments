@@ -1,0 +1,20 @@
+{
+  "name": "TestLoadPNG",
+  "version": "1.0.0",
+  "keywords": [
+    "Razer",
+    "keyboard",
+    "PNG",
+    "test"
+  ],
+  "author": "yomboprime",
+  "contributors": [],
+  "private": true,
+  "dependencies": {
+    "fast-png": "^6.1.0"
+  },
+  "scripts": {
+    "start": "node loadPNG.js"
+  },
+  "license": "MIT"
+}

@@ -5,7 +5,15 @@ Experiments with RGB LEDs of Razer Huntsman Elite keyboard and other devices fro
 
 For all the examples you need Node.js and the OpenRazer driver installed.
 
-No install required, just clone this repository and cd to each of the examples subfolders to execute them.
+Just clone this repository and cd to each of the examples subfolders to execute them.
+
+Some examples have npm dependencies. If there is a ```package.json``` file in them, you need to do
+
+```shell
+npm install
+```
+
+
 
 ## Examples
 
@@ -37,6 +45,14 @@ node volumeWheel.js
 To stop, press ```Ctrl-c```
 
 Unfortunately, when using custom colors one cannot set just an individual key, the minimum is an entire row. And if you only set a row, the rest of the keyboard remains black. So in this example besides the wheel color being updated, the rest of the keyboard keys colors are set to random values.
+
+## Example 2: Load a PNG file
+
+This example needs a dependency library to load PNG files, so run ```npm install``` first.
+
+The example loads a PNG image on the keyboard LEDs, by default 22x9 pixels. To change to your keyboards dimensions, set ```keyb.numRows``` and ```keyb.numColums``` just after the contruction of the RazerKeyboard (line ```const keyb = new RazerKeyboard();``` ). To change the PNG image filename loaded, change the line ```const imagePath = './yombo.png';```
+
+The example loads the color on the keyboard and then just exits.
 
 ## Lib
 
