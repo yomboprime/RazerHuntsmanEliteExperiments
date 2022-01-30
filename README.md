@@ -50,9 +50,17 @@ Unfortunately, when using custom colors one cannot set just an individual key, t
 
 This example needs a dependency library to load PNG files, so run ```npm install``` first.
 
-The example loads a PNG image on the keyboard LEDs, by default 22x9 pixels. To change to your keyboards dimensions, set ```keyb.numRows``` and ```keyb.numColums``` just after the contruction of the RazerKeyboard (line ```const keyb = new RazerKeyboard();``` ). To change the PNG image filename loaded, change the line ```const imagePath = './yombo.png';```
+Change the device filename string to match your device as in the first example.
+
+The example loads a PNG image on the keyboard LEDs, by default 22x9 pixels. To change to your keyboards dimensions, set ```keyb.numRows``` and ```keyb.numColums``` just after the contruction of the RazerKeyboard (line ```const keyb = new RazerKeyboard();``` ). To change the PNG image filename being loaded, change the line ```const imagePath = './yombo.png';```
 
 The example loads the color on the keyboard and then just exits.
+
+## Example 3: Audio equalizer
+
+This example gets the system audio volume output and shows a bar in the hand rest LEDs depending on audio volume.
+
+You need the program ```arecord``` intalled to use this. Also you'll need to set the keyboard device as in the other examples.
 
 ## Lib
 
