@@ -224,24 +224,10 @@ function connectAudioProcess() {
 
 	audioChildProcess.on( 'close', ( code ) => {
 
-		audioConnected = false;
-
-		if ( isAppEnding ) {
-
-			finish();
-
-		}
-		else {
-
-			console.error( "Audio disconnected." );
-
-		}
-
+		console.error( "Audio disconnected." );
 		audioChildProcess = null;
 
 	} );
-
-	audioConnected = true;
 
 }
 
