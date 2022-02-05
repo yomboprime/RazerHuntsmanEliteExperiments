@@ -150,7 +150,7 @@ function getSystemAudioDeviceIndex( callback ) {
 		const lines = output.split( '\n' );
 		for ( let l in lines ) {
 
-			const line = lines[ l ];
+			const line = lines[ l ].trim();
 			const indexStr = '* index: ';
 			const indexPos = line.indexOf( indexStr );
 			if ( indexPos >= 0 ) {
